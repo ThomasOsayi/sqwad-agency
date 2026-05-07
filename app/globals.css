@@ -1194,6 +1194,7 @@ h2 .highlight {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   animation: dashboard-float 6s ease-in-out infinite;
+  will-change: transform;
 }
 
 .dashboard-mock::before {
