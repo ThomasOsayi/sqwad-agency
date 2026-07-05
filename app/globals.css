@@ -556,6 +556,29 @@ h2 .highlight {
   .offer-grid { grid-template-columns: 1fr; }
 }
 
+/* ===== Offer: plan badge + price note (two-plan pricing) ===== */
+.offer-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px 12px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #001620;
+  background: var(--gradient-cyan);
+  box-shadow: 0 8px 20px -6px rgba(0, 217, 255, 0.5);
+}
+
+.offer-price-note {
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: -8px 0 22px;
+}
+
 /* ===== System: 7-step playbook ===== */
 .system-grid {
   display: grid;

@@ -1,28 +1,28 @@
 import Reveal from './Reveal';
 
-const ourCard = {
-  title: 'SQWAD Agency',
-  headline: '10% of revenue. Nothing else.',
+const performance = {
+  badge: 'Recommended',
+  title: 'Performance',
+  price: '$500/mo + 10%',
+  note: 'Low base, plus 10% of the TikTok Shop revenue we generate.',
   items: [
-    '$0 setup fee',
-    '$0 monthly retainer',
-    '10% only on TikTok Shop revenue we generate',
+    '$500 monthly base',
+    '10% of TikTok Shop revenue we generate',
     'Full creator program build & management',
     'Spark Ads amplification on winning videos',
-    'Cancel anytime, no long-term contract',
   ],
 };
 
-const theirCard = {
-  title: 'Typical Agency',
-  headline: 'Retainers, setup fees, lock-ins.',
+const flat = {
+  title: 'Flat',
+  price: '$1,000/mo',
+  note: 'Zero commission. Keep 100% of revenue to fund higher creator payouts.',
   items: [
-    '$2,000 to $10,000 setup fees',
-    '$3,000 to $8,000 monthly retainers',
-    'Charged whether you make money or not',
-    '6 to 12 month contract minimums',
-    'Limited or no paid amplification included',
-    'Misaligned incentives from day one',
+    '$1,000 flat monthly, 0% commission',
+    'Keep every dollar of revenue you generate',
+    'Fund more competitive creator commissions',
+    'Full creator program build & management',
+    'Spark Ads amplification on winning videos',
   ],
 };
 
@@ -33,22 +33,23 @@ export default function Offer() {
         <Reveal className="section-head">
           <div className="section-tag">The Offer</div>
           <h2>
-            The only TikTok Shop agency that{' '}
-            <span className="highlight">eats what it kills</span>.
+            Two ways to pay. Both{' '}
+            <span className="highlight">built around your growth</span>.
           </h2>
           <p className="section-sub">
-            We don&apos;t get paid unless you do. Most agencies lock you into
-            retainers and setup fees before they&apos;ve made you a single
-            dollar. We took that off the table.
+            No setup fees. Pick the model that fits your margins. We build and run
+            the entire creator program either way, on a 3-month initial term.
           </p>
         </Reveal>
 
         <div className="offer-grid">
           <Reveal className="offer-card us">
-            <div className="offer-title">{ourCard.title}</div>
-            <div className="offer-headline">{ourCard.headline}</div>
+            <span className="offer-badge">{performance.badge}</span>
+            <div className="offer-title">{performance.title}</div>
+            <div className="offer-headline">{performance.price}</div>
+            <p className="offer-price-note">{performance.note}</p>
             <ul className="offer-list">
-              {ourCard.items.map((item) => (
+              {performance.items.map((item) => (
                 <li key={item}>
                   <span className="offer-icon">✓</span> {item}
                 </li>
@@ -56,13 +57,14 @@ export default function Offer() {
             </ul>
           </Reveal>
 
-          <Reveal className="offer-card them">
-            <div className="offer-title">{theirCard.title}</div>
-            <div className="offer-headline">{theirCard.headline}</div>
+          <Reveal className="offer-card us">
+            <div className="offer-title">{flat.title}</div>
+            <div className="offer-headline">{flat.price}</div>
+            <p className="offer-price-note">{flat.note}</p>
             <ul className="offer-list">
-              {theirCard.items.map((item) => (
+              {flat.items.map((item) => (
                 <li key={item}>
-                  <span className="offer-icon">✕</span> {item}
+                  <span className="offer-icon">✓</span> {item}
                 </li>
               ))}
             </ul>

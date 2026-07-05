@@ -7,12 +7,12 @@ type FAQItem = { q: string; a: ReactNode };
 
 const faqs: FAQItem[] = [
   {
-    q: 'How does the 10% actually work?',
-    a: "We take 10% of the gross TikTok Shop revenue we generate for you each month, billed at the end of the month based on TikTok Shop's reported attributed sales. No upfront fees, no minimums, no setup costs. If we generate $0, you pay $0.",
+    q: 'How does pricing work?',
+    a: "Two options, both with no setup fee. Performance is $500 a month plus 10% of the TikTok Shop revenue we generate, billed at month end on TikTok Shop's reported attributed sales. Flat is $1,000 a month with zero commission, so you keep 100% of revenue and can put more toward creator payouts. Both cover the full program build and management. We help you pick the model that fits your margins on the strategy call.",
   },
   {
     q: "What's the minimum commitment?",
-    a: "Month-to-month. No long-term contract. We ask for a 60-day initial window so we have time to launch the program properly, but you can cancel any time after that with 30 days' notice.",
+    a: "A 3-month initial term. That gives us enough runway to launch the program, recruit creators, and get content converting before results get judged. After the initial term it continues month-to-month, cancel with 30 days' notice.",
   },
   {
     q: 'Do I own the creators we recruit?',

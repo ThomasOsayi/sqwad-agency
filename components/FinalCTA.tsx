@@ -1,4 +1,5 @@
 import Reveal from './Reveal';
+import { AGENCY_CALL_URL } from '@/lib/links';
 
 export default function FinalCTA() {
   return (
@@ -17,7 +18,7 @@ export default function FinalCTA() {
 
           <div className="final-cta-buttons">
             <a
-              href="https://calendly.com/thomasosayi/30min"
+              href={AGENCY_CALL_URL}
               target="_blank"
               rel="noreferrer"
               className="btn-primary"
@@ -34,7 +35,7 @@ export default function FinalCTA() {
               <span className="check">✓</span> No upfront cost
             </span>
             <span>
-              <span className="check">✓</span> No long-term contract
+              <span className="check">✓</span> Full-service build
             </span>
             <span>
               <span className="check">✓</span> Real results, real client

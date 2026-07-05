@@ -12,13 +12,14 @@ export default function Hero() {
               Now booking Q3 launches
             </div>
             <h1>
-              Pay nothing until your{' '}
-              <span className="highlight">TikTok Shop</span> is making money.
+              We build and run your{' '}
+              <span className="highlight">TikTok Shop</span> creator program,
+              end to end.
             </h1>
             <p className="hero-sub">
-              We build, recruit, manage, and scale your full TikTok Shop
-              creator program end to end. No setup fee. No retainer. We take
-              10% of the revenue we generate. That&apos;s it.
+              We recruit creators, manage the program, and amplify your winners
+              with Spark Ads. Two simple pricing options, both built around your
+              growth.
             </p>
             <div className="hero-ctas">
               <a href="#book" className="btn-primary">
@@ -33,7 +34,7 @@ export default function Hero() {
                 <span className="check">✓</span> $0 upfront
               </div>
               <div className="hero-trust-item">
-                <span className="check">✓</span> Cancel anytime
+                <span className="check">✓</span> Done-for-you
               </div>
               <div className="hero-trust-item">
                 <span className="check">✓</span> Built by actual creators
